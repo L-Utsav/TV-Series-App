@@ -1,0 +1,107 @@
+body {
+    margin-top: 70px;
+
+}
+
+.navbar{
+    font-family: "chilanka";
+    width: 100%;
+    font-size: 25px;
+    height: 100px;
+}
+
+.navbar-brand {
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+
+ul{ 
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0px;
+}
+
+li{
+    display: inline;
+
+}
+
+li a{
+    color: black;
+    font-family: "chilanka";
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    color: white;
+    background-color: #788;
+    padding: 20px;
+    border:1px dotted black;
+}
+
+#flexy{
+    width: 31%;
+    height: auto;
+    margin: 10px 10px 10px 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+section{
+    height: auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify !important;
+}
+
+#showcase h1 {
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+#showcase img {
+    width: 75%;
+    height: 300px;
+}
+
+#showcase li {
+    list-style-type: none;
+}
+
+#showcase li a:hover:not(.active) {
+    color: black !important;
+    padding: 20px !important;
+
+}
+
+.card:hover:not(.active) {
+    border:1px dotted black;
+    color: white;
+    background-color: #788;
+}
+
+.myimg {
+    width: 100%;
+    height: auto;
+}
+
+.card{
+    height: max-content;
+    padding: 10px 10px 10px 10px;
+}

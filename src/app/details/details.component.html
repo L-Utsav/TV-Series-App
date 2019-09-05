@@ -14,7 +14,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#" (click)="ngOnInit()">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="favorites">Favorites</a></li>
                     <li>
                     <form class="navbar-form navbar-right" role="search">
                     <input type="text" class="form-control" placeholder="search tvshows" #tvshowName>
@@ -41,7 +41,7 @@
                     <p><b>Country:</b> {{selected_show.origin_country}}</p>
                     <p><b>Rating: </b>{{selected_show.vote_average}}/10 ({{selected_show.vote_count}})</p>
 
-                    <a class="btn btn-default btn-lg showcase-btn" href="">Add to Favorites</a>
+                    <a routerLink="/favorites" class="btn btn-default btn-lg showcase-btn" href="">Add to Favorites</a>
                 </div>
                  
             </div>
