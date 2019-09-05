@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+            <span style="font-size: 15px">Let's watch some</span><br>
+            <a class="navbar-brand" href="#" (click)="ngOnInit()"><i>Series/वीरीज़</i></a>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" (click)="ngOnInit()">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li>
+                    <form class="navbar-form navbar-right" role="search">
+                    <input type="text" class="form-control" placeholder="search tvshows" #tvshowName>
+                    <button type="submit" class="btn btn-default" (click)="findTVshow(tvshowName.value)"><i class="fa fa-search"></i></button>
+                    </form>
+                    </li>
+                </ul>  
+            </div>
+    </div>
+</nav>
+                 
+<br><br><br><br>
+
+<section id="elab" class="jumbotron">
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="showcase-left">
+                    <h2 style="font-size: 50px;"><b>{{selected_show.name}}</b></h2>
+                    <p>{{selected_show.overview}}</p>
+                    <p><b>Airing since:</b> {{selected_show.first_air_date}}</p>
+                    <p><b>Seasons:</b> {{selected_show.number_of_seasons}}</p>
+                    <p><b>Episodes:</b> {{selected_show.number_of_episodes}}</p>
+                    <p><b>Country:</b> {{selected_show.origin_country}}</p>
+                    <p><b>Rating: </b>{{selected_show.vote_average}}/10 ({{selected_show.vote_count}})</p>
+
+                    <a class="btn btn-default btn-lg showcase-btn" href="">Add to Favorites</a>
+                </div>
+                 
+            </div>
+
+            <div class="col-md-6 col-sm-6">
+                <div class="showcase-right">
+                  <img src="https://image.tmdb.org/t/p/w500/{{selected_show.poster_path}}">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
